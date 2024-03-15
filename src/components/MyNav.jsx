@@ -1,5 +1,3 @@
-// const url = "http://www.omdbapi.com/?i=tt3896198&apikey=df894da2";
-
 import React from "react";
 import { Navbar, Nav, Container, Form, Button } from "react-bootstrap";
 import logo from "../assets/logo.png";

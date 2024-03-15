@@ -5,8 +5,8 @@ import { Grid, Grid3x3 } from "react-bootstrap-icons";
 function TVShows() {
   return (
     <Container fluid className="d-flex justify-content-between bg-dark">
-      <div className="d-flex">
-        <h2 className="mb-4 text-light">TV Shows</h2>
+      <div className="d-flex align-items-center">
+        <h2 className="m-0 text-light">TV Shows</h2>
         <ButtonGroup role="group">
           <Dropdown className="ms-4 mt-1">
             <Dropdown.Toggle variant="secondary" size="sm" className="rounded-0" style={{ backgroundColor: "#221f1f" }}>
