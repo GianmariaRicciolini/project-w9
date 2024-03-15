@@ -1,6 +1,6 @@
 import { Component } from "react";
 import SingleMovie from "./SingleMovie";
-import { Row } from "react-bootstrap";
+import { Row, Spinner } from "react-bootstrap";
 
 const url = "http://www.omdbapi.com/?apikey=df894da2&s=";
 
@@ -48,10 +48,10 @@ class RowMovies extends Component {
   }
 
   render() {
-    const { movies } = this.state;
+    const { movies, loading } = this.state;
 
     return (
-      <Row className="pt-5">
+      <Row className="pt-3 overflow-hidden">
         <h2 className="text-light pb-3">{this.props.searchId.split("%20").join(" ")}</h2>
         {movies.slice(0, 6).map((movie, index) => (
           <SingleMovie key={index} movie={movie} />
