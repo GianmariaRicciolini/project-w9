@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container, Form, Button } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import { Search, Bell, PersonCircle } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -13,9 +14,9 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#" className="fw-bold">
+            <Link to={"/"} className="nav-link fw-bold">
               Home
-            </Nav.Link>
+            </Link>
             <Nav.Link href="#" className="fw-bold">
               TV Shows
             </Nav.Link>
